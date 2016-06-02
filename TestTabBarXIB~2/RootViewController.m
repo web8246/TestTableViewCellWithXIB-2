@@ -18,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.tabBarController.delegate = self;
+//    self.tabBarController.delegate = self;
+    self.delegate = self;
     
 //    FirstVC *vc1 = [FirstVC new];
 //    SecondVC *vc2 = [SecondVC new];
@@ -42,9 +43,9 @@
 }
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
-    if(item.tag == 1){
+    if(item.tag == 0){
         NSLog(@"TestOneController");
-    }else if(item.tag == 2){
+    }else if(item.tag == 1){
         NSLog(@"TestTwoController");
     }
 }

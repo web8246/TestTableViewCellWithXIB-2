@@ -7,7 +7,7 @@
 //
 
 #import "FirstVC.h"
-
+#import "First02VC.h"
 @interface FirstVC ()
 
 @end
@@ -17,15 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(40, 50, 60, 30)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(40, 80, 60, 30)];
     [button setTitle:@"返回" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    UIButton *button2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 60, 30)];
+    [button2 setTitle:@"跳轉" forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(toNextControllerWithNav:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button2];
 }
 -(void)backAction:(id)sender{
 //    [self.parentViewController dismissModalViewControllerAnimated:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
     
+}
+-(void)toNextControllerWithNav:(id)sender
+{
+    First02VC *first02 = [[First02VC alloc] init];
+    [self.navigationController pushViewController:first02 animated:true];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +50,20 @@
         self.tabBarItem = item;
         self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",9];
     }
+    
+    
+    ////如果要一個一個設置圖片的話，下面做的不完全，應該要設置uesr按下前和按下後的圖片
+    //        self.title = @"Red";
+    //        UIImage *image = [UIImage imageNamed:@"a.jpg"];
+    //        CGImageRef imageRef = image.CGImage;
+    //        self.tabBarItem.image = [[UIImage imageWithCGImage:imageRef scale:2 orientation:
+    //                                  UIImageOrientationDown] imageWithRenderingMode:
+    //                                 UIImageRenderingModeAlwaysOriginal];
+    
+    ////如果圖片有偏移的情況，用下面方式來處理（上，左，下，右）
+    //        self.tabBarItem.imageInsets = UIEdgeInsetsMake(3.1, -10, -6, -10);
+    
+    
     return self;
 }
 

@@ -1,24 +1,25 @@
 //
-//  SecondVC.m
+//  Second02VC.m
 //  TestTabBarXIB~2
 //
-//  Created by dean on 2016/5/31.
+//  Created by dean on 2016/6/2.
 //  Copyright © 2016年 dean. All rights reserved.
 //
 
-#import "SecondVC.h"
 #import "Second02VC.h"
-@interface SecondVC ()
+#import "SecondVC.h"
+@interface Second02VC ()
 
 @end
 
-@implementation SecondVC
+@implementation Second02VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     UIButton *button2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 60, 30)];
-    [button2 setTitle:@"present" forState:UIControlStateNormal];
+    [button2 setTitle:@"back" forState:UIControlStateNormal];
     [button2 addTarget:self action:@selector(toNextViewControllerWithPresentViewController:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button2];
 }
@@ -30,20 +31,23 @@
 
 -(void)toNextViewControllerWithPresentViewController:(id)sender
 {
-    Second02VC *second02 = [[Second02VC alloc] init];
-    [self presentViewController:second02 animated:true completion:nil];
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:@"SecondVC" bundle:nibBundleOrNil];
-    if (self) {
-        UITabBarItem *item = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:1];
-        self.tabBarItem = item;
-        self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",3];
-    }
+    self = [super initWithNibName:@"Second02VC" bundle:nibBundleOrNil];
+    //    if (self) {
+    //        UITabBarItem *item = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:1];
+    //        self.tabBarItem = item;
+    //        self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",3];
+    //    }
     return self;
 }
+
 /*
 #pragma mark - Navigation
 

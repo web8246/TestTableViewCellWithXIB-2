@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0570BAB71CFFC62C007C6FDE /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0570BAB61CFFC62C007C6FDE /* 3.jpg */; };
+		0570BAB91CFFC781007C6FDE /* heretop-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0570BAB81CFFC781007C6FDE /* heretop-1.png */; };
+		0570BABD1CFFCD93007C6FDE /* First02VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0570BABB1CFFCD93007C6FDE /* First02VC.m */; };
+		0570BABE1CFFCD93007C6FDE /* First02VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0570BABC1CFFCD93007C6FDE /* First02VC.xib */; };
+		0570BAC21CFFCDBE007C6FDE /* Second02VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0570BAC01CFFCDBE007C6FDE /* Second02VC.m */; };
+		0570BAC31CFFCDBE007C6FDE /* Second02VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0570BAC11CFFCDBE007C6FDE /* Second02VC.xib */; };
 		058F0B101CFD240B001D8530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F0B0F1CFD240B001D8530 /* main.m */; };
 		058F0B131CFD240B001D8530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F0B121CFD240B001D8530 /* AppDelegate.m */; };
 		058F0B161CFD240B001D8530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F0B151CFD240B001D8530 /* ViewController.m */; };
@@ -41,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0570BAB61CFFC62C007C6FDE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		0570BAB81CFFC781007C6FDE /* heretop-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heretop-1.png"; sourceTree = "<group>"; };
+		0570BABA1CFFCD93007C6FDE /* First02VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = First02VC.h; sourceTree = "<group>"; };
+		0570BABB1CFFCD93007C6FDE /* First02VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = First02VC.m; sourceTree = "<group>"; };
+		0570BABC1CFFCD93007C6FDE /* First02VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = First02VC.xib; sourceTree = "<group>"; };
+		0570BABF1CFFCDBE007C6FDE /* Second02VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Second02VC.h; sourceTree = "<group>"; };
+		0570BAC01CFFCDBE007C6FDE /* Second02VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Second02VC.m; sourceTree = "<group>"; };
+		0570BAC11CFFCDBE007C6FDE /* Second02VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Second02VC.xib; sourceTree = "<group>"; };
 		058F0B0B1CFD240B001D8530 /* TestTabBarXIB~2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestTabBarXIB~2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		058F0B0F1CFD240B001D8530 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		058F0B111CFD240B001D8530 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +130,8 @@
 		058F0B0D1CFD240B001D8530 /* TestTabBarXIB~2 */ = {
 			isa = PBXGroup;
 			children = (
+				0570BAB61CFFC62C007C6FDE /* 3.jpg */,
+				0570BAB81CFFC781007C6FDE /* heretop-1.png */,
 				058F0B111CFD240B001D8530 /* AppDelegate.h */,
 				058F0B121CFD240B001D8530 /* AppDelegate.m */,
 				058F0B141CFD240B001D8530 /* ViewController.h */,
@@ -127,10 +143,16 @@
 				05C5562D1CFD349A00CA9DEF /* FirstVC.m */,
 				05C5562E1CFD349A00CA9DEF /* FirstVC.xib */,
 				05C556311CFD34AC00CA9DEF /* FirstVC~2.xib */,
+				0570BABA1CFFCD93007C6FDE /* First02VC.h */,
+				0570BABB1CFFCD93007C6FDE /* First02VC.m */,
+				0570BABC1CFFCD93007C6FDE /* First02VC.xib */,
 				05C556331CFD34BF00CA9DEF /* SecondVC.h */,
 				05C556341CFD34BF00CA9DEF /* SecondVC.m */,
 				05C556351CFD34BF00CA9DEF /* SecondVC.xib */,
 				05C556381CFD34D000CA9DEF /* SecondVC~2.xib */,
+				0570BABF1CFFCDBE007C6FDE /* Second02VC.h */,
+				0570BAC01CFFCDBE007C6FDE /* Second02VC.m */,
+				0570BAC11CFFCDBE007C6FDE /* Second02VC.xib */,
 				058F0B1A1CFD240B001D8530 /* Assets.xcassets */,
 				058F0B1F1CFD240B001D8530 /* Info.plist */,
 				058F0B0E1CFD240B001D8530 /* Supporting Files */,
@@ -268,12 +290,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0570BAC31CFFCDBE007C6FDE /* Second02VC.xib in Resources */,
 				05C556451CFD8E3900CA9DEF /* ViewController.xib in Resources */,
 				05C556371CFD34BF00CA9DEF /* SecondVC.xib in Resources */,
 				058F0B1B1CFD240B001D8530 /* Assets.xcassets in Resources */,
 				05C556301CFD349B00CA9DEF /* FirstVC.xib in Resources */,
 				05C556391CFD34D000CA9DEF /* SecondVC~2.xib in Resources */,
+				0570BAB91CFFC781007C6FDE /* heretop-1.png in Resources */,
+				0570BAB71CFFC62C007C6FDE /* 3.jpg in Resources */,
 				05C556321CFD34AC00CA9DEF /* FirstVC~2.xib in Resources */,
+				0570BABE1CFFCD93007C6FDE /* First02VC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +329,8 @@
 				05B10F161CFED49400B5F8E0 /* RootViewController.m in Sources */,
 				058F0B131CFD240B001D8530 /* AppDelegate.m in Sources */,
 				05C556361CFD34BF00CA9DEF /* SecondVC.m in Sources */,
+				0570BABD1CFFCD93007C6FDE /* First02VC.m in Sources */,
+				0570BAC21CFFCDBE007C6FDE /* Second02VC.m in Sources */,
 				058F0B101CFD240B001D8530 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
